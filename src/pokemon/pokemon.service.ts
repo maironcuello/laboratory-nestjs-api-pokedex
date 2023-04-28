@@ -5,11 +5,12 @@ import { UpdatePokemonDto } from './dto/update-pokemon.dto';
 @Injectable()
 export class PokemonService {
   create(createPokemonDto: CreatePokemonDto) {
-    return 'This action adds a new pokemon';
+    createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
+    return createPokemonDto;
   }
 
   findAll() {
-    return `This action returns all pokemon`;
+    return 'This action returns all pokemon';
   }
 
   findOne(id: number) {
