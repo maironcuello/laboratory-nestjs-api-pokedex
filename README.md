@@ -39,9 +39,15 @@ $ yarn install
 $ yarn add @nestjs/cli
 ```
 
-## Load Data base - only develpment
+## Load DataBase - only develpment
 ```
 docker-compose up -d 
+```
+
+
+## Charger data with seed - only develpment
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ## Running the app
